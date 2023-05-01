@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5398743174680778389}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RopedCargo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,7 +81,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -197,7 +197,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fe82c4e982917ab45b1f8cafeaae4898,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -13.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fe82c4e982917ab45b1f8cafeaae4898,
         type: 3}
@@ -249,6 +249,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe82c4e982917ab45b1f8cafeaae4898,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790183945725220954, guid: fe82c4e982917ab45b1f8cafeaae4898,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819001077394492298, guid: fe82c4e982917ab45b1f8cafeaae4898,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6905609870639353253, guid: fe82c4e982917ab45b1f8cafeaae4898,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036213049465896255, guid: fe82c4e982917ab45b1f8cafeaae4898,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -289,6 +314,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 7679405479284656892}
+    - targetCorrespondingSourceObject: {fileID: -5506977543257564031, guid: fe82c4e982917ab45b1f8cafeaae4898,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8896241377466650187}
   m_SourcePrefab: {fileID: 100100000, guid: fe82c4e982917ab45b1f8cafeaae4898, type: 3}
 --- !u!1 &2329105159103690126 stripped
 GameObject:
@@ -335,7 +364,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 1, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000000011175873, y: 10.898996, z: -0.0000005825758}
+  m_ConnectedAnchor: {x: -0.0000000037252903, y: 5.8989925, z: 0.0000004685969}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -476,7 +505,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 1, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00484239, y: 4.059989, z: -0.000000059604645}
+  m_ConnectedAnchor: {x: 0.009617576, y: 4.0599537, z: 0}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -582,7 +611,7 @@ Rigidbody:
   serializedVersion: 4
   m_Mass: 10
   m_Drag: 1
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.8
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -611,7 +640,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000000028861347, y: 10.0104885, z: 0.0000005126493}
+  m_ConnectedAnchor: {x: -1.910161e-11, y: 6.0104847, z: -0.00000023070331}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -701,6 +730,20 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &8896241377466650187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5846070501916615301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52d74e0e519ed9a43a3a682c8f0e0d6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 0
+  roped: 1
 --- !u!4 &7293749207805467119 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fe82c4e982917ab45b1f8cafeaae4898,
@@ -752,7 +795,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 1, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0048423787, y: 11.070123, z: 0}
+  m_ConnectedAnchor: {x: -0.009617556, y: 6.070202, z: -0.00000047683716}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0

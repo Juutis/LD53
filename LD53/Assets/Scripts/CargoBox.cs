@@ -27,6 +27,8 @@ public class CargoBox : MonoBehaviour
             rend = GetComponentInChildren<Renderer>();
         }
         Type = type;
-        rend.material = materials[(int)Type];
+        var mats = rend.materials;
+        mats[1] = materials[(int)Type];
+        rend.sharedMaterials = mats;
     }
 }

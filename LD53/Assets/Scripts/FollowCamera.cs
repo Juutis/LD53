@@ -21,4 +21,8 @@ public class FollowCamera : MonoBehaviour
     {
         
     }
+
+    void LateUpdate() {
+        
+    }
 }
