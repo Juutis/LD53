@@ -26,9 +26,9 @@ public class Cargo : MonoBehaviour
     {
         if (IsTutorial) {
             type = CargoType.FOOD;
-            Spawn();
-            started = true;
         }
+        Spawn();
+        started = true;
     }
 
     // Update is called once per frame
